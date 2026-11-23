@@ -1,0 +1,302 @@
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+main {
+  padding: 30px;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.producto {
+  background-color: white;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+.producto h3 {
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+form input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 15px;
+}
+
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 30px 15px;
+}
+
+.auth-card {
+  background-color: white;
+  width: 100%;
+  max-width: 420px;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h1 {
+  font-size: 27px;
+  margin-bottom: 10px;
+  color: #292929;
+}
+
+.auth-description {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  background: none;
+}
+
+.auth-card label {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.auth-card input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  margin: 8px 0;
+}
+
+.auth-card button {
+  margin-top: 20px;
+  padding: 13px;
+  background-color: #e58b45;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.auth-card button:hover {
+  background-color: #cc7130;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 14px;
+}
+
+.auth-link a {
+  color: #d97832;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff0df;
+  padding: 55px;
+  border-radius: 18px;
+  gap: 30px;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-tag {
+  color: #d97832;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 38px;
+  text-align: left;
+  margin: 18px 0;
+}
+
+.hero p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.hero-image {
+  font-size: 120px;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: #e58b45;
+  color: white;
+  padding: 13px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.hero-button:hover {
+  background-color: #cc7130;
+}
+
+.catalogo {
+  padding: 35px 0;
+}
+
+.catalogo-titulo h2,
+.home-info h2 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.catalogo-titulo p,
+.home-info p {
+  color: #777;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.producto {
+  width: auto;
+  padding: 18px;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto-imagen {
+  background-color: #fff0df;
+  border-radius: 10px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.producto-categoria {
+  font-size: 12px;
+  color: #d97832;
+}
+
+.producto h3 {
+  margin: 10px 0;
+}
+
+.producto-pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.producto-pie strong {
+  font-size: 18px;
+}
+
+.producto-pie button {
+  font-size: 12px;
+}
+
+.home-info {
+  background-color: #fff0df;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .hero-image {
+    font-size: 80px;
+  }
+
+  .productos {
+    grid-template-columns: 1fr;
+  }
+}
